@@ -73,13 +73,16 @@ margin-left:-480px;
 ```img{
 图片和文字垂直居中对齐
 vertical-align:middle;
-}```
+}
+```
+
 ##6、css可见性
 * overflow:hidden; 溢出隐藏
 * visibility:hidden; 隐藏元素 隐藏之后还占据原来的的位置
 * display:none; 隐藏元素 隐藏之后不占据原来的位置
 * display:block; 元素可见
 * display:none和display:block; 常配合js使用
+
 ##7、CSS之内容移除(网页优化)
 * 使用text-indent:-5000em;
 ```a{
@@ -93,6 +96,7 @@ padding-top:100px;
 overflow:hidden;
 background:red;
 }```
+
 ## 8、精灵图 Sprites
 ###8.1 优点
 1、利用CSS Sprites能很好地减少了网页的http请求，从而大大的提高了页面的性能，这也是CSS Sprites最大的优点，也是其被广泛传播和应用的主要原因。

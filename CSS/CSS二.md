@@ -21,14 +21,16 @@ Css是用来美化html标签的，相当于页面化妆。
 * display:block; 行内转块
 * display:inline; 块转行内
 * display:inline-block; 块或行内转行内块
-* 
+
 ##2、Css三大特性
 ###2.1 层叠性
 >当多个样式作用于同一个(同一类)标签时，样式发生了冲突，总是执行后边的代码(后边代码层叠前边的代码)。和标签调用选择器的顺序没有关系。
+
 ###2.2 继承性
 >文字的所有属性都可以被继承
 -特殊：h1-h6 文字大小不能被继承
 a标签文字颜色不能被继承
+
 ###3.3 优先级
 ```
 默认样式<标签选择器<类选择器<id选择器<行内样式<!important
@@ -36,28 +38,35 @@ a标签文字颜色不能被继承
 ★继承的权重为0
 ★权重会叠加
 ```
+
 ##3、背景属性
 ###3.1 背景颜色
 >background-color:red
+
 ###3.2 背景图片
 >background-image:url("路径")
 括号内的双引号是可以省去的，但是一般不省
+
 ###3.3 背景平铺
 >background-repeat:repeat|no-repeat|repeat-x|repeat-y
 平铺(默认)|不平铺|x轴方向平铺|Y轴方向平铺
+
 ###3.4 背景定位
 >background-position:left|right|center|top|bottom 居左|居右|中心|顶部|底部
 
 * 方位值只写一个的时候，另一个值默认居中
 * 写2个方位值的时候，顺序没有要求
 * 写2个具体值的时候，第一个值代表水平方向；第二个值代表垂直方向
+
 ###3.5 背景是否滚动
 >background-attachment: scroll|fixed 滚动|固定
 
 * scroll 时 背景定位是以定义的盒子尺寸出发定位的
+
 ###3.6 背景属性连写
 background: red url("1.png") no-repeat 30px 40px scroll;
 连写的时候没有顺序要求，url为必写项
+
 ##4、链接伪类
 * a:link{属性:值;} 链接默认状态 a{属性:值;}是一样的
 * a:visited{属性:值;} 链接访问之后的状态

@@ -10,6 +10,7 @@ Css是用来美化html标签的，相当于页面化妆。
 ★元素浮动之后不占据原来的位置（脱标）
 ★浮动的盒子在一行上显示
 ★行内元素浮动之后转换为行内块元素。（不推荐使用，转行内元素最好使用display: inline-block;）
+
 ###1.3清除浮动
 >当父容器没有设置高度，里面的盒子没有设置浮动的情况下会将父容器的高度撑开。一旦父容器中的盒子设置浮动，脱离标准文档流，父容器立马没有高度，下面的盒子会跑到浮动的盒子下面。出现这种情况，我们需要清除浮动
 
@@ -36,6 +37,7 @@ clear: left  |  right  | both
     zoom:1;
 }
 ```
+
 ### 1.4 overflow
 * overflw:hidden; 会将出了盒子的内容裁掉
 * overflw:auto;当内容出了盒子之外，会自动生成滚动条，如果没有内容出盒子之外，则不出现滚动条
@@ -55,6 +57,7 @@ img{border:0;vertical-align:middle}
 table{border-collapse:collapse;border-spacing:0} 
 p{word-wrap:break-word} 
 ```
+
 ###2.2新浪：
 ```
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;} 
