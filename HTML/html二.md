@@ -51,8 +51,8 @@ colspan="2" 合并同一行上的单元格；rowspan="2"合并同一列上的单
 >valign="top|middle|bottom"顶部|中间|底部
 ##2.7 水平对其方式
 >align="left|centrer|right" 左边|居中|右边
-#3、表格
-##3.1 表单域
+# 3、表格
+## 3.1 表单域
 ```
 <form action="1.php" method="get">   </form>
 属性：action 处理信息；method="get|post"
