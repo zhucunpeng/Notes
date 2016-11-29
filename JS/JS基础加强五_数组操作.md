@@ -93,6 +93,13 @@ var b =  array.some(function(item,index,arr) {
 * d、伪数组不能使用
 
 ###3.7 伪数组和arguments
+
+* Array.from(伪数组);伪数组变成真数组
+
+```
+Array.from("foo"); // ["f", "o", "o"]
+```
+
 ```
 fn(1,2);  //传进去的实参个数可以大于形参的个数
 function fn(a,b){
