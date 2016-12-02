@@ -86,3 +86,168 @@ leader=leader+(target-leader)/10;
         },30);
     }
 ```
+
+## 1.6 缓动动画框架封装(回调函数)实例代码
+```
+ <body>
+ <button>运动到400然后回来</button>
+ <div></div>
+ <script>
+     var btnArr=document.getElementsByTagName("button");
+     var div = document.getElementsByTagName("div")[0];
+ 
+     btnArr[0].onclick = function(){
+         var json1={"left":300,"top":200.5,"width":300,"height":200};
+         var json2={"left":10,"top":30,"width":100,"height":100};
+         animate(div,json1,function(){
+             animate(div,json2)
+         });
+     }
+ 
+     //参数为三个变量
+     function animate(ele,json,fn){
+         //先清除定时器
+         clearInterval(ele.timer);
+         ele.timer = setInterval(function(){
+             //开闭原则
+             var bool = true;
+ 
+             //遍历属性和值 分别单独处理json
+             //attr==k(键)  target == json[k] (值)
+             for(var k in json){
+                 var leader = parseInt(getStyle(ele,k)) || 0 ;
+                 var step = (json[k]-leader)/10;
+                 step = step>0?Math.ceil(step):Math.floor(step);
+                 ele.style[k]= leader+ step +"px";
+                 if(Math.abs(json[k]-leader)>Math.abs(step)){
+                     bool=false;
+                 }
+ 
+                 //清除定时器
+                 //判断 目标值和当前值的差大于步长 就不能跳出循环
+                 //不考虑小数的情况 目标位置和当前位置不想等 就不能清除定时器
+                 if(json[k] !== leader){
+                     bool = false;
+                 }
+             }
+             //只有所有的属性都到了指定位置，bool值才会变成false
+             if(bool){
+                 for(var j in json){
+                     ele.style[j]=json[j]+"px";
+                 }
+                 clearInterval(ele.timer);
+                 //所有程序执行完毕了 现在可以执行回调函数了
+                 //只有传递了回调函数 才能执行
+                 if(fn){
+                     fn();
+                 }
+             }
+         },30);
+     }
+ 
+     //兼容方法获取元素样式
+     function getStyle(ele,attr){
+         if(window.getComputedStyle){
+             return getComputedStyle(ele,null)[attr];
+         }
+         return ele.currentStyle[attr];
+     }
+ 
+ </script>
+ </body>
+```
+
+
+## 1.7 缓动动画框架封装(透明度&层级)
+```
+<body>
+    <button>运动到400然后回来</button>
+    <div></div>
+    <script>
+    var btnArr = document.getElementsByTagName("button");
+    var div = document.getElementsByTagName("div")[0];
+
+    btnArr[0].onclick = function() {
+        var json1 = {
+            "left": 300.4,
+            "top": 200,
+            "width": 300.6,
+            "height": 200,
+            "border-radius": 100,
+            "opacity": 30,
+            "zIndex": 2
+        };
+        animate(div, json1);
+
+    }
+
+    //参数变为3个
+    function animate(ele, json, fn) {
+        //先请定时器
+        clearInterval(ele.timer);
+        ele.timer = setInterval(function() {
+            //开闭原则
+            var bool = true;
+
+            //遍历属性和值 分别单独处理json
+            //attr == k 键 target==json[k] 值
+            for (var k in json) {
+                var leader;
+                //判断如果属性为opacity的时候 特殊获取值
+                if (k === "opacity") {
+                    leader = getStyle(ele, k) * 100 || 0;
+                } else {
+                    leader = parseInt(getStyle(ele, k)) || 0;
+                }
+
+
+                var step = (json[k] - leader) / 10;
+                step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                leader = leader + step;
+
+                //赋值 特殊情况 特殊赋值
+                if (k === "opacity") {
+                    ele.style[k] = leader / 100;
+                    //兼容IE678
+                    ele.style.filter = "alpha(opacity=" + leader + ")"
+                } else if (k === "zIndex") {
+                    ele.style.zIndex = json[k];
+                } else {
+                    ele.style[k] = leader + "px";
+                }
+
+
+
+                //清除定时器
+                //判断 目标值和当前值的差大于步长 就不能跳出循环
+                //不考虑小数的情况 目标位置和当前位置不想等 就不能清除定时器
+                // if(json[k] !== leader){
+                //   bool = false;
+                // }
+                if (Math.abs(json[k] - leader) > Math.abs(step)) {
+                    bool = false;
+                }
+            }
+            console.log(1);
+            if (bool) {
+                for (var j in json) {
+                    ele.style[j] = json[j] + "px";
+                }
+                clearInterval(ele.timer);
+                if (fn) {
+                    fn();
+                }
+            }
+        }, 30);
+
+        function getStyle(ele, attr) {
+            if (window.getComputedStyle) {
+                return window.getComputedStyle(ele, null)[attr];
+            }
+            return ele.currentStyle[attr];
+        }
+    }
+    </script>
+</body>
+
+```
