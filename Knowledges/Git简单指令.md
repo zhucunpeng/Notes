@@ -1,39 +1,39 @@
-GIT °æ±¾¿ØÖÆ³£ÓÃÃüÁî»ã×Ü
+GIT ç‰ˆæœ¬æ§åˆ¶å¸¸ç”¨å‘½ä»¤æ±‡æ€»
 
-- git version ²é¿´µ±Ç°git°æ±¾ĞÅÏ¢
-- git help »ñÈ¡È«²¿ÃüÁî°ïÖúĞÅÏ¢
-- git help <command> »ñÈ¡Ö¸¶¨ÃüÁî°ïÖúĞÅÏ¢
-- git config user.name "Your Name Comes Here" ÉèÖÃµ±Ç°ÏîÄ¿gitÓÃ»§Ãû
-- git config --global user.name "Your Name Comes Here" ÉèÖÃÈ«¾ÖÏîÄ¿gitÓÃ»§Ãû
-- git config user.email you@yourdomain.example.com ÉèÖÃµ±Ç°ÏîÄ¿gitµç×ÓÓÊ¼ş
-- git config --global user.email you@yourdomain.example.com ÉèÖÃÈ«¾ÖÏîÄ¿gitµç×ÓÓÊ¼ş
-- git config --list ÏÔÊ¾µ±Ç°ÏîÄ¿ÉèÖÃ²ÎÊı
-- git config --global --list ÏÔÊ¾È«¾ÖÏîÄ¿ÉèÖÃ²ÎÊı
-- git init ³õÊ¼»¯git²Ö¿â
-- git add <fileName1> <fileName2> ... Ìí¼ÓÖ¸¶¨ÎÄ¼şµ½Ë÷Òı
-- git add <folderPath> Ìí¼ÓÖ¸¶¨Ä¿Â¼µ½Ë÷Òı
-- git add . Ìí¼ÓgitÄ¿Â¼ÏÂµÄËùÓĞÎÄ¼şµ½Ë÷Òı
-- git add --all Ìí¼ÓËùÓĞÎÄ¼şµ½Ë÷Òı
-- git rm <folderPath/fileName> É¾³ıÖ¸¶¨ÎÄ¼ş
-- git status ²é¿´µ±Ç°±¾µØ¿â×´Ì¬
-- git commit -m "commit message" Ìá½»µ±Ç°¹¤×÷Ä¿Â¼µÄĞŞ¸ÄÄÚÈİ£¬Ê¹ÓÃÇ°ĞèÒªÏÈÊ¹ÓÃ
-- git status²é¿´µ±Ç°·ÖÖ§×´Ì¬
-- git log ´òÓ¡ÀúÊ·ÈÕÖ¾
-- git reset -hard <branchName/tag/commitID> ·µ»ØÖ¸¶¨µÄcommit×´Ì¬£¬°üÀ¨±¾µØÎÄ¼ş
-- git reset -soft <branchName/tag/commitID> ·µ»ØÖ¸¶¨µÄcommit×´Ì¬£¬²»°üÀ¨±¾µØÎÄ¼ş
-- git branch ²é¿´ÏÖÔÚ±¾µØ·ÖÖ§Çé¿ö
-- git branch -r ²é¿´·şÎñÆ÷¶Ë·ÖÖ§Çé¿ö
-- git branch <branchName> ´´½¨Ò»¸öÃûÎªbranchNameµÄĞÂ·ÖÖ§
-- git branch -d <branchName> É¾³ıÒ»¸öÃûÎªbranchNameµÄ¾É·ÖÖ§
-- git branch -m <oldBranchName> ½«ÃûÎªoldBranchNameµÄ·ÖÖ§Ãû³ÆĞŞ¸ÄÎªnewBranchName
-- git branch -m <newBranchName> ½«ÕıÔÚ¹¤×÷·ÖÖ§Ãû³ÆĞŞ¸ÄÎªnewBranchName
-- git checkout <localBranchName> ÇĞ»»µ½ÃûÎªlocalBranchNameµÄ±¾µØ·ÖÖ§ÉÏ
-- git checkout <remoteBranchName> ÇĞ»»µ½ÃûÎªremoteBranchNameµÄÔ¶³Ì·ÖÖ§ÉÏ£¬´ËÊ±Î´ĞÂ½¨·ÖÖ§£¬¶øÊÇ´¦ÓÚÒ»¸öÃûÎªno
-- branchµÄÁÙÊ±·ÖÖ§ÉÏ£¬»¹ĞèÒªÊ¹ÓÃgit branch -b À´´´½¨Ò»¸öĞÂ·ÖÖ§²¢½«¸ÃÁÙÊ±·ÖÖ§¹Ò½Óµ½ĞÂ·ÖÖ§ÉÏ
-- git checkout -b <branchName> ´´½¨Ò»¸öÃûÎªbranchNameµÄĞÂ·ÖÖ§£¬²¢ÇĞ»»µ½¸Ã·ÖÖ§ÉÏ
-- git merge <branchName> ½«ÃûÎªbranchNameµÄ·ÖÖ§ºÏ²¢µ½µ±Ç°Ëù´¦ÔÚµÄ·ÖÖ§ÉÏ
-- git pull ´Ó·şÎñÆ÷µÄ²Ö¿âÖĞ»ñÈ¡´úÂë£¬ºÍ±¾µØ´úÂëºÏ²¢
-- git push ½«±¾µØ´úÂëÍÆËÍµ½·şÎñÆ÷µÄ²Ö¿âÖĞ
-- git push -f Ç¿ÖÆ½«±¾µØ´úÂëÍÆËÍµ½·şÎñÆ÷µÄ²Ö¿âÖĞ£¬ÓÃÀ´ÍÆËÍ±¾µØindexºÍ·şÎñÆ÷indexÓĞÃ¬¶ÜµÄ·ÖÖ§
-- git push origin --delete <branchName> É¾³ıÃûÎªbranchNameµÄÔ¶³Ì·ÖÖ§
-- git clone <userName>@<serviceAddress>:<serviceProjectDirectory/projectName> <localProjectDirectory>/ ´Ó·şÎñÆ÷¶Ë¿ËÂ¡ÏîÄ¿µ½±¾µØ
+- git version æŸ¥çœ‹å½“å‰gitç‰ˆæœ¬ä¿¡æ¯
+- git help è·å–å…¨éƒ¨å‘½ä»¤å¸®åŠ©ä¿¡æ¯
+- git help <command> è·å–æŒ‡å®šå‘½ä»¤å¸®åŠ©ä¿¡æ¯
+- git config user.name "Your Name Comes Here" è®¾ç½®å½“å‰é¡¹ç›®gitç”¨æˆ·å
+- git config --global user.name "Your Name Comes Here" è®¾ç½®å…¨å±€é¡¹ç›®gitç”¨æˆ·å
+- git config user.email you@yourdomain.example.com è®¾ç½®å½“å‰é¡¹ç›®gitç”µå­é‚®ä»¶
+- git config --global user.email you@yourdomain.example.com è®¾ç½®å…¨å±€é¡¹ç›®gitç”µå­é‚®ä»¶
+- git config --list æ˜¾ç¤ºå½“å‰é¡¹ç›®è®¾ç½®å‚æ•°
+- git config --global --list æ˜¾ç¤ºå…¨å±€é¡¹ç›®è®¾ç½®å‚æ•°
+- git init åˆå§‹åŒ–gitä»“åº“
+- git add <fileName1> <fileName2> ... æ·»åŠ æŒ‡å®šæ–‡ä»¶åˆ°ç´¢å¼•
+- git add <folderPath> æ·»åŠ æŒ‡å®šç›®å½•åˆ°ç´¢å¼•
+- git add . æ·»åŠ gitç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶åˆ°ç´¢å¼•
+- git add --all æ·»åŠ æ‰€æœ‰æ–‡ä»¶åˆ°ç´¢å¼•
+- git rm <folderPath/fileName> åˆ é™¤æŒ‡å®šæ–‡ä»¶
+- git status æŸ¥çœ‹å½“å‰æœ¬åœ°åº“çŠ¶æ€
+- git commit -m "commit message" æäº¤å½“å‰å·¥ä½œç›®å½•çš„ä¿®æ”¹å†…å®¹ï¼Œä½¿ç”¨å‰éœ€è¦å…ˆä½¿ç”¨
+- git statusæŸ¥çœ‹å½“å‰åˆ†æ”¯çŠ¶æ€
+- git log æ‰“å°å†å²æ—¥å¿—
+- git reset -hard <branchName/tag/commitID> è¿”å›æŒ‡å®šçš„commitçŠ¶æ€ï¼ŒåŒ…æ‹¬æœ¬åœ°æ–‡ä»¶
+- git reset -soft <branchName/tag/commitID> è¿”å›æŒ‡å®šçš„commitçŠ¶æ€ï¼Œä¸åŒ…æ‹¬æœ¬åœ°æ–‡ä»¶
+- git branch æŸ¥çœ‹ç°åœ¨æœ¬åœ°åˆ†æ”¯æƒ…å†µ
+- git branch -r æŸ¥çœ‹æœåŠ¡å™¨ç«¯åˆ†æ”¯æƒ…å†µ
+- git branch <branchName> åˆ›å»ºä¸€ä¸ªåä¸ºbranchNameçš„æ–°åˆ†æ”¯
+- git branch -d <branchName> åˆ é™¤ä¸€ä¸ªåä¸ºbranchNameçš„æ—§åˆ†æ”¯
+- git branch -m <oldBranchName> å°†åä¸ºoldBranchNameçš„åˆ†æ”¯åç§°ä¿®æ”¹ä¸ºnewBranchName
+- git branch -m <newBranchName> å°†æ­£åœ¨å·¥ä½œåˆ†æ”¯åç§°ä¿®æ”¹ä¸ºnewBranchName
+- git checkout <localBranchName> åˆ‡æ¢åˆ°åä¸ºlocalBranchNameçš„æœ¬åœ°åˆ†æ”¯ä¸Š
+- git checkout <remoteBranchName> åˆ‡æ¢åˆ°åä¸ºremoteBranchNameçš„è¿œç¨‹åˆ†æ”¯ä¸Šï¼Œæ­¤æ—¶æœªæ–°å»ºåˆ†æ”¯ï¼Œè€Œæ˜¯å¤„äºä¸€ä¸ªåä¸ºno
+- branchçš„ä¸´æ—¶åˆ†æ”¯ä¸Šï¼Œè¿˜éœ€è¦ä½¿ç”¨git branch -b æ¥åˆ›å»ºä¸€ä¸ªæ–°åˆ†æ”¯å¹¶å°†è¯¥ä¸´æ—¶åˆ†æ”¯æŒ‚æ¥åˆ°æ–°åˆ†æ”¯ä¸Š
+- git checkout -b <branchName> åˆ›å»ºä¸€ä¸ªåä¸ºbranchNameçš„æ–°åˆ†æ”¯ï¼Œå¹¶åˆ‡æ¢åˆ°è¯¥åˆ†æ”¯ä¸Š
+- git merge <branchName> å°†åä¸ºbranchNameçš„åˆ†æ”¯åˆå¹¶åˆ°å½“å‰æ‰€å¤„åœ¨çš„åˆ†æ”¯ä¸Š
+- git pull ä»æœåŠ¡å™¨çš„ä»“åº“ä¸­è·å–ä»£ç ï¼Œå’Œæœ¬åœ°ä»£ç åˆå¹¶
+- git push å°†æœ¬åœ°ä»£ç æ¨é€åˆ°æœåŠ¡å™¨çš„ä»“åº“ä¸­
+- git push -f å¼ºåˆ¶å°†æœ¬åœ°ä»£ç æ¨é€åˆ°æœåŠ¡å™¨çš„ä»“åº“ä¸­ï¼Œç”¨æ¥æ¨é€æœ¬åœ°indexå’ŒæœåŠ¡å™¨indexæœ‰çŸ›ç›¾çš„åˆ†æ”¯
+- git push origin --delete <branchName> åˆ é™¤åä¸ºbranchNameçš„è¿œç¨‹åˆ†æ”¯
+- git clone <userName>@<serviceAddress>:<serviceProjectDirectory/projectName> <localProjectDirectory>/ ä»æœåŠ¡å™¨ç«¯å…‹éš†é¡¹ç›®åˆ°æœ¬åœ°

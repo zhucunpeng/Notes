@@ -1,174 +1,174 @@
-²é¿´¡¢Ìí¼Ó¡¢Ìá½»¡¢É¾³ı¡¢ÕÒ»Ø£¬ÖØÖÃĞŞ¸ÄÎÄ¼ş
+æŸ¥çœ‹ã€æ·»åŠ ã€æäº¤ã€åˆ é™¤ã€æ‰¾å›ï¼Œé‡ç½®ä¿®æ”¹æ–‡ä»¶
 
-git help <command> # ÏÔÊ¾commandµÄhelp
+git help <command> # æ˜¾ç¤ºcommandçš„help
 
-git show # ÏÔÊ¾Ä³´ÎÌá½»µÄÄÚÈİ git show $id
+git show # æ˜¾ç¤ºæŸæ¬¡æäº¤çš„å†…å®¹ git show $id
 
-git co -- <file> # Å×Æú¹¤×÷ÇøĞŞ¸Ä
+git co -- <file> # æŠ›å¼ƒå·¥ä½œåŒºä¿®æ”¹
 
-git co . # Å×Æú¹¤×÷ÇøĞŞ¸Ä
+git co . # æŠ›å¼ƒå·¥ä½œåŒºä¿®æ”¹
 
-git add <file> # ½«¹¤×÷ÎÄ¼şĞŞ¸ÄÌá½»µ½±¾µØÔİ´æÇø
+git add <file> # å°†å·¥ä½œæ–‡ä»¶ä¿®æ”¹æäº¤åˆ°æœ¬åœ°æš‚å­˜åŒº
 
-git add . # ½«ËùÓĞĞŞ¸Ä¹ıµÄ¹¤×÷ÎÄ¼şÌá½»Ôİ´æÇø
+git add . # å°†æ‰€æœ‰ä¿®æ”¹è¿‡çš„å·¥ä½œæ–‡ä»¶æäº¤æš‚å­˜åŒº
 
-git rm <file> # ´Ó°æ±¾¿âÖĞÉ¾³ıÎÄ¼ş
+git rm <file> # ä»ç‰ˆæœ¬åº“ä¸­åˆ é™¤æ–‡ä»¶
 
-git rm <file> --cached # ´Ó°æ±¾¿âÖĞÉ¾³ıÎÄ¼ş£¬µ«²»É¾³ıÎÄ¼ş
+git rm <file> --cached # ä»ç‰ˆæœ¬åº“ä¸­åˆ é™¤æ–‡ä»¶ï¼Œä½†ä¸åˆ é™¤æ–‡ä»¶
 
-git reset <file> # ´ÓÔİ´æÇø»Ö¸´µ½¹¤×÷ÎÄ¼ş
+git reset <file> # ä»æš‚å­˜åŒºæ¢å¤åˆ°å·¥ä½œæ–‡ä»¶
 
-git reset -- . # ´ÓÔİ´æÇø»Ö¸´µ½¹¤×÷ÎÄ¼ş
+git reset -- . # ä»æš‚å­˜åŒºæ¢å¤åˆ°å·¥ä½œæ–‡ä»¶
 
-git reset --hard # »Ö¸´×î½üÒ»´ÎÌá½»¹ıµÄ×´Ì¬£¬¼´·ÅÆúÉÏ´ÎÌá½»ºóµÄËùÓĞ±¾´ÎĞŞ¸Ä
+git reset --hard # æ¢å¤æœ€è¿‘ä¸€æ¬¡æäº¤è¿‡çš„çŠ¶æ€ï¼Œå³æ”¾å¼ƒä¸Šæ¬¡æäº¤åçš„æ‰€æœ‰æœ¬æ¬¡ä¿®æ”¹
 
-git ci <file> git ci . git ci -a # ½«git add, git rmºÍgit ciµÈ²Ù×÷¶¼ºÏ²¢ÔÚÒ»Æğ×ö¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+git ci <file> git ci . git ci -a # å°†git add, git rmå’Œgit ciç­‰æ“ä½œéƒ½åˆå¹¶åœ¨ä¸€èµ·åšã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€
 
 git ci -am "some comments"
 
-git ci --amend # ĞŞ¸Ä×îºóÒ»´ÎÌá½»¼ÇÂ¼
+git ci --amend # ä¿®æ”¹æœ€åä¸€æ¬¡æäº¤è®°å½•
 
-git revert <$id> # »Ö¸´Ä³´ÎÌá½»µÄ×´Ì¬£¬»Ö¸´¶¯×÷±¾ÉíÒ²´´½¨´ÎÌá½»¶ÔÏó
+git revert <$id> # æ¢å¤æŸæ¬¡æäº¤çš„çŠ¶æ€ï¼Œæ¢å¤åŠ¨ä½œæœ¬èº«ä¹Ÿåˆ›å»ºæ¬¡æäº¤å¯¹è±¡
 
-git revert HEAD # »Ö¸´×îºóÒ»´ÎÌá½»µÄ×´Ì¬
+git revert HEAD # æ¢å¤æœ€åä¸€æ¬¡æäº¤çš„çŠ¶æ€
 
-²é¿´ÎÄ¼şdiff
+æŸ¥çœ‹æ–‡ä»¶diff
 
-git diff <file> # ±È½Ïµ±Ç°ÎÄ¼şºÍÔİ´æÇøÎÄ¼ş²îÒì git diff
+git diff <file> # æ¯”è¾ƒå½“å‰æ–‡ä»¶å’Œæš‚å­˜åŒºæ–‡ä»¶å·®å¼‚ git diff
 
-git diff <id1><id1><id2> # ±È½ÏÁ½´ÎÌá½»Ö®¼äµÄ²îÒì
+git diff <id1><id1><id2> # æ¯”è¾ƒä¸¤æ¬¡æäº¤ä¹‹é—´çš„å·®å¼‚
 
-git diff <branch1>..<branch2> # ÔÚÁ½¸ö·ÖÖ§Ö®¼ä±È½Ï
+git diff <branch1>..<branch2> # åœ¨ä¸¤ä¸ªåˆ†æ”¯ä¹‹é—´æ¯”è¾ƒ
 
-git diff --staged # ±È½ÏÔİ´æÇøºÍ°æ±¾¿â²îÒì
+git diff --staged # æ¯”è¾ƒæš‚å­˜åŒºå’Œç‰ˆæœ¬åº“å·®å¼‚
 
-git diff --cached # ±È½ÏÔİ´æÇøºÍ°æ±¾¿â²îÒì
+git diff --cached # æ¯”è¾ƒæš‚å­˜åŒºå’Œç‰ˆæœ¬åº“å·®å¼‚
 
-git diff --stat # ½ö½ö±È½ÏÍ³¼ÆĞÅÏ¢
+git diff --stat # ä»…ä»…æ¯”è¾ƒç»Ÿè®¡ä¿¡æ¯
 
-²é¿´Ìá½»¼ÇÂ¼
+æŸ¥çœ‹æäº¤è®°å½•
 
-git log git log <file> # ²é¿´¸ÃÎÄ¼şÃ¿´ÎÌá½»¼ÇÂ¼
+git log git log <file> # æŸ¥çœ‹è¯¥æ–‡ä»¶æ¯æ¬¡æäº¤è®°å½•
 
-git log -p <file> # ²é¿´Ã¿´ÎÏêÏ¸ĞŞ¸ÄÄÚÈİµÄdiff
+git log -p <file> # æŸ¥çœ‹æ¯æ¬¡è¯¦ç»†ä¿®æ”¹å†…å®¹çš„diff
 
-git log -p -2 # ²é¿´×î½üÁ½´ÎÏêÏ¸ĞŞ¸ÄÄÚÈİµÄdiff
+git log -p -2 # æŸ¥çœ‹æœ€è¿‘ä¸¤æ¬¡è¯¦ç»†ä¿®æ”¹å†…å®¹çš„diff
 
-git log --stat #²é¿´Ìá½»Í³¼ÆĞÅÏ¢
+git log --stat #æŸ¥çœ‹æäº¤ç»Ÿè®¡ä¿¡æ¯
 
 tig
 
-MacÉÏ¿ÉÒÔÊ¹ÓÃtig´úÌædiffºÍlog£¬brew install tig
+Macä¸Šå¯ä»¥ä½¿ç”¨tigä»£æ›¿diffå’Œlogï¼Œbrew install tig
 
-Git ±¾µØ·ÖÖ§¹ÜÀí
+Git æœ¬åœ°åˆ†æ”¯ç®¡ç†
 
-²é¿´¡¢ÇĞ»»¡¢´´½¨ºÍÉ¾³ı·ÖÖ§
+æŸ¥çœ‹ã€åˆ‡æ¢ã€åˆ›å»ºå’Œåˆ é™¤åˆ†æ”¯
 
-git br -r # ²é¿´Ô¶³Ì·ÖÖ§
+git br -r # æŸ¥çœ‹è¿œç¨‹åˆ†æ”¯
 
-git br <new_branch> # ´´½¨ĞÂµÄ·ÖÖ§
+git br <new_branch> # åˆ›å»ºæ–°çš„åˆ†æ”¯
 
-git br -v # ²é¿´¸÷¸ö·ÖÖ§×îºóÌá½»ĞÅÏ¢
+git br -v # æŸ¥çœ‹å„ä¸ªåˆ†æ”¯æœ€åæäº¤ä¿¡æ¯
 
-git br --merged # ²é¿´ÒÑ¾­±»ºÏ²¢µ½µ±Ç°·ÖÖ§µÄ·ÖÖ§
+git br --merged # æŸ¥çœ‹å·²ç»è¢«åˆå¹¶åˆ°å½“å‰åˆ†æ”¯çš„åˆ†æ”¯
 
-git br --no-merged # ²é¿´ÉĞÎ´±»ºÏ²¢µ½µ±Ç°·ÖÖ§µÄ·ÖÖ§
+git br --no-merged # æŸ¥çœ‹å°šæœªè¢«åˆå¹¶åˆ°å½“å‰åˆ†æ”¯çš„åˆ†æ”¯
 
-git co <branch> # ÇĞ»»µ½Ä³¸ö·ÖÖ§
+git co <branch> # åˆ‡æ¢åˆ°æŸä¸ªåˆ†æ”¯
 
-git co -b <new_branch> # ´´½¨ĞÂµÄ·ÖÖ§£¬²¢ÇÒÇĞ»»¹ıÈ¥
+git co -b <new_branch> # åˆ›å»ºæ–°çš„åˆ†æ”¯ï¼Œå¹¶ä¸”åˆ‡æ¢è¿‡å»
 
-git co -b <new_branch> <branch> # »ùÓÚbranch´´½¨ĞÂµÄnew_branch
+git co -b <new_branch> <branch> # åŸºäºbranchåˆ›å»ºæ–°çš„new_branch
 
-git co $id # °ÑÄ³´ÎÀúÊ·Ìá½»¼ÇÂ¼checkout³öÀ´£¬µ«ÎŞ·ÖÖ§ĞÅÏ¢£¬ÇĞ»»µ½ÆäËû·ÖÖ§»á×Ô¶¯É¾³ı
+git co $id # æŠŠæŸæ¬¡å†å²æäº¤è®°å½•checkoutå‡ºæ¥ï¼Œä½†æ— åˆ†æ”¯ä¿¡æ¯ï¼Œåˆ‡æ¢åˆ°å…¶ä»–åˆ†æ”¯ä¼šè‡ªåŠ¨åˆ é™¤
 
-git co $id -b <new_branch> # °ÑÄ³´ÎÀúÊ·Ìá½»¼ÇÂ¼checkout³öÀ´£¬´´½¨³ÉÒ»¸ö·ÖÖ§
+git co $id -b <new_branch> # æŠŠæŸæ¬¡å†å²æäº¤è®°å½•checkoutå‡ºæ¥ï¼Œåˆ›å»ºæˆä¸€ä¸ªåˆ†æ”¯
 
-git br -d <branch> # É¾³ıÄ³¸ö·ÖÖ§
+git br -d <branch> # åˆ é™¤æŸä¸ªåˆ†æ”¯
 
-git br -D <branch> # Ç¿ÖÆÉ¾³ıÄ³¸ö·ÖÖ§ (Î´±»ºÏ²¢µÄ·ÖÖ§±»É¾³ıµÄÊ±ºòĞèÒªÇ¿ÖÆ)
+git br -D <branch> # å¼ºåˆ¶åˆ é™¤æŸä¸ªåˆ†æ”¯ (æœªè¢«åˆå¹¶çš„åˆ†æ”¯è¢«åˆ é™¤çš„æ—¶å€™éœ€è¦å¼ºåˆ¶)
 
- ·ÖÖ§ºÏ²¢ºÍrebase
+ åˆ†æ”¯åˆå¹¶å’Œrebase
 
-git merge <branch> # ½«branch·ÖÖ§ºÏ²¢µ½µ±Ç°·ÖÖ§
+git merge <branch> # å°†branchåˆ†æ”¯åˆå¹¶åˆ°å½“å‰åˆ†æ”¯
 
-git merge origin/master --no-ff # ²»ÒªFast-FowardºÏ²¢£¬ÕâÑù¿ÉÒÔÉú³ÉmergeÌá½»
+git merge origin/master --no-ff # ä¸è¦Fast-Fowardåˆå¹¶ï¼Œè¿™æ ·å¯ä»¥ç”Ÿæˆmergeæäº¤
 
-git rebase master <branch> # ½«master rebaseµ½branch£¬Ïàµ±ÓÚ£º git co <branch> && git rebase master && git co master && git merge <branch>
+git rebase master <branch> # å°†master rebaseåˆ°branchï¼Œç›¸å½“äºï¼š git co <branch> && git rebase master && git co master && git merge <branch>
 
- Git²¹¶¡¹ÜÀí(·½±ãÔÚ¶àÌ¨»úÆ÷ÉÏ¿ª·¢Í¬²½Ê±ÓÃ)
+ Gitè¡¥ä¸ç®¡ç†(æ–¹ä¾¿åœ¨å¤šå°æœºå™¨ä¸Šå¼€å‘åŒæ­¥æ—¶ç”¨)
 
-git diff > ../sync.patch # Éú³É²¹¶¡
+git diff > ../sync.patch # ç”Ÿæˆè¡¥ä¸
 
-git apply ../sync.patch # ´ò²¹¶¡
+git apply ../sync.patch # æ‰“è¡¥ä¸
 
-git apply --check ../sync.patch #²âÊÔ²¹¶¡ÄÜ·ñ³É¹¦
+git apply --check ../sync.patch #æµ‹è¯•è¡¥ä¸èƒ½å¦æˆåŠŸ
 
- GitÔİ´æ¹ÜÀí
+ Gitæš‚å­˜ç®¡ç†
 
-git stash # Ôİ´æ
+git stash # æš‚å­˜
 
-git stash list # ÁĞËùÓĞstash
+git stash list # åˆ—æ‰€æœ‰stash
 
-git stash apply # »Ö¸´Ôİ´æµÄÄÚÈİ
+git stash apply # æ¢å¤æš‚å­˜çš„å†…å®¹
 
-git stash drop # É¾³ıÔİ´æÇø
+git stash drop # åˆ é™¤æš‚å­˜åŒº
 
-GitÔ¶³Ì·ÖÖ§¹ÜÀí
+Gitè¿œç¨‹åˆ†æ”¯ç®¡ç†
 
-git pull # ×¥È¡Ô¶³Ì²Ö¿âËùÓĞ·ÖÖ§¸üĞÂ²¢ºÏ²¢µ½±¾µØ
+git pull # æŠ“å–è¿œç¨‹ä»“åº“æ‰€æœ‰åˆ†æ”¯æ›´æ–°å¹¶åˆå¹¶åˆ°æœ¬åœ°
 
-git pull --no-ff # ×¥È¡Ô¶³Ì²Ö¿âËùÓĞ·ÖÖ§¸üĞÂ²¢ºÏ²¢µ½±¾µØ£¬²»Òª¿ì½øºÏ²¢
+git pull --no-ff # æŠ“å–è¿œç¨‹ä»“åº“æ‰€æœ‰åˆ†æ”¯æ›´æ–°å¹¶åˆå¹¶åˆ°æœ¬åœ°ï¼Œä¸è¦å¿«è¿›åˆå¹¶
 
-git fetch origin # ×¥È¡Ô¶³Ì²Ö¿â¸üĞÂ
+git fetch origin # æŠ“å–è¿œç¨‹ä»“åº“æ›´æ–°
 
-git merge origin/master # ½«Ô¶³ÌÖ÷·ÖÖ§ºÏ²¢µ½±¾µØµ±Ç°·ÖÖ§
+git merge origin/master # å°†è¿œç¨‹ä¸»åˆ†æ”¯åˆå¹¶åˆ°æœ¬åœ°å½“å‰åˆ†æ”¯
 
-git co --track origin/branch # ¸ú×ÙÄ³¸öÔ¶³Ì·ÖÖ§´´½¨ÏàÓ¦µÄ±¾µØ·ÖÖ§
+git co --track origin/branch # è·Ÿè¸ªæŸä¸ªè¿œç¨‹åˆ†æ”¯åˆ›å»ºç›¸åº”çš„æœ¬åœ°åˆ†æ”¯
 
-git co -b <local_branch> origin/<remote_branch> # »ùÓÚÔ¶³Ì·ÖÖ§´´½¨±¾µØ·ÖÖ§£¬¹¦ÄÜÍ¬ÉÏ
+git co -b <local_branch> origin/<remote_branch> # åŸºäºè¿œç¨‹åˆ†æ”¯åˆ›å»ºæœ¬åœ°åˆ†æ”¯ï¼ŒåŠŸèƒ½åŒä¸Š
 
-git push # pushËùÓĞ·ÖÖ§
+git push # pushæ‰€æœ‰åˆ†æ”¯
 
-git push origin master # ½«±¾µØÖ÷·ÖÖ§ÍÆµ½Ô¶³ÌÖ÷·ÖÖ§
+git push origin master # å°†æœ¬åœ°ä¸»åˆ†æ”¯æ¨åˆ°è¿œç¨‹ä¸»åˆ†æ”¯
 
-git push -u origin master # ½«±¾µØÖ÷·ÖÖ§ÍÆµ½Ô¶³Ì(ÈçÎŞÔ¶³ÌÖ÷·ÖÖ§Ôò´´½¨£¬ÓÃÓÚ³õÊ¼»¯Ô¶³Ì²Ö¿â)
+git push -u origin master # å°†æœ¬åœ°ä¸»åˆ†æ”¯æ¨åˆ°è¿œç¨‹(å¦‚æ— è¿œç¨‹ä¸»åˆ†æ”¯åˆ™åˆ›å»ºï¼Œç”¨äºåˆå§‹åŒ–è¿œç¨‹ä»“åº“)
 
-git push origin <local_branch> # ´´½¨Ô¶³Ì·ÖÖ§£¬ originÊÇÔ¶³Ì²Ö¿âÃû
+git push origin <local_branch> # åˆ›å»ºè¿œç¨‹åˆ†æ”¯ï¼Œ originæ˜¯è¿œç¨‹ä»“åº“å
 
-git push origin <local_branch>:<remote_branch> # ´´½¨Ô¶³Ì·ÖÖ§
+git push origin <local_branch>:<remote_branch> # åˆ›å»ºè¿œç¨‹åˆ†æ”¯
 
-git push origin :<remote_branch> #ÏÈÉ¾³ı±¾µØ·ÖÖ§(git br -d <branch>)£¬È»ºóÔÙpushÉ¾³ıÔ¶³Ì·ÖÖ§
+git push origin :<remote_branch> #å…ˆåˆ é™¤æœ¬åœ°åˆ†æ”¯(git br -d <branch>)ï¼Œç„¶åå†pushåˆ é™¤è¿œç¨‹åˆ†æ”¯
 
-GitÔ¶³Ì²Ö¿â¹ÜÀí
+Gitè¿œç¨‹ä»“åº“ç®¡ç†
 
 GitHub
 
-git remote -v # ²é¿´Ô¶³Ì·şÎñÆ÷µØÖ·ºÍ²Ö¿âÃû³Æ
+git remote -v # æŸ¥çœ‹è¿œç¨‹æœåŠ¡å™¨åœ°å€å’Œä»“åº“åç§°
 
-git remote show origin # ²é¿´Ô¶³Ì·şÎñÆ÷²Ö¿â×´Ì¬
+git remote show origin # æŸ¥çœ‹è¿œç¨‹æœåŠ¡å™¨ä»“åº“çŠ¶æ€
 
-git remote add origin git@ github:robbin/robbin_site.git # Ìí¼ÓÔ¶³Ì²Ö¿âµØÖ·
+git remote add origin git@ github:robbin/robbin_site.git # æ·»åŠ è¿œç¨‹ä»“åº“åœ°å€
 
-git remote set-url origin git@ github.com:robbin/robbin_site.git # ÉèÖÃÔ¶³Ì²Ö¿âµØÖ·(ÓÃÓÚĞŞ¸ÄÔ¶³Ì²Ö¿âµØÖ·) git remote rm <repository> # É¾³ıÔ¶³Ì²Ö¿â
+git remote set-url origin git@ github.com:robbin/robbin_site.git # è®¾ç½®è¿œç¨‹ä»“åº“åœ°å€(ç”¨äºä¿®æ”¹è¿œç¨‹ä»“åº“åœ°å€) git remote rm <repository> # åˆ é™¤è¿œç¨‹ä»“åº“
 
-´´½¨Ô¶³Ì²Ö¿â
+åˆ›å»ºè¿œç¨‹ä»“åº“
 
-git clone --bare robbin_site robbin_site.git # ÓÃ´ø°æ±¾µÄÏîÄ¿´´½¨´¿°æ±¾²Ö¿â
+git clone --bare robbin_site robbin_site.git # ç”¨å¸¦ç‰ˆæœ¬çš„é¡¹ç›®åˆ›å»ºçº¯ç‰ˆæœ¬ä»“åº“
 
-scp -r my_project.git git@ git.csdn.net:~ # ½«´¿²Ö¿âÉÏ´«µ½·şÎñÆ÷ÉÏ
+scp -r my_project.git git@ git.csdn.net:~ # å°†çº¯ä»“åº“ä¸Šä¼ åˆ°æœåŠ¡å™¨ä¸Š
 
-mkdir robbin_site.git && cd robbin_site.git && git --bare init # ÔÚ·şÎñÆ÷´´½¨´¿²Ö¿â
+mkdir robbin_site.git && cd robbin_site.git && git --bare init # åœ¨æœåŠ¡å™¨åˆ›å»ºçº¯ä»“åº“
 
-git remote add origin git@ github.com:robbin/robbin_site.git # ÉèÖÃÔ¶³Ì²Ö¿âµØÖ·
+git remote add origin git@ github.com:robbin/robbin_site.git # è®¾ç½®è¿œç¨‹ä»“åº“åœ°å€
 
-git push -u origin master # ¿Í»§¶ËÊ×´ÎÌá½»
+git push -u origin master # å®¢æˆ·ç«¯é¦–æ¬¡æäº¤
 
-git push -u origin develop # Ê×´Î½«±¾µØdevelop·ÖÖ§Ìá½»µ½Ô¶³Ìdevelop·ÖÖ§£¬²¢ÇÒtrack
+git push -u origin develop # é¦–æ¬¡å°†æœ¬åœ°developåˆ†æ”¯æäº¤åˆ°è¿œç¨‹developåˆ†æ”¯ï¼Œå¹¶ä¸”track
 
-git remote set-head origin master # ÉèÖÃÔ¶³Ì²Ö¿âµÄHEADÖ¸Ïòmaster·ÖÖ§
+git remote set-head origin master # è®¾ç½®è¿œç¨‹ä»“åº“çš„HEADæŒ‡å‘masteråˆ†æ”¯
 
-Ò²¿ÉÒÔÃüÁîÉèÖÃ¸ú×ÙÔ¶³Ì¿âºÍ±¾µØ¿â
+ä¹Ÿå¯ä»¥å‘½ä»¤è®¾ç½®è·Ÿè¸ªè¿œç¨‹åº“å’Œæœ¬åœ°åº“
 
 git branch --set-upstream master origin/master
 
