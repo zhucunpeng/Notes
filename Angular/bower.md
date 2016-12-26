@@ -45,8 +45,8 @@
 }
   ```
   
- - 包的信息 `bower info jquery`
-  + 会看到jquery可用的版本信息
- - 安装指定版本`bower i jquery#1.9.0
+- 包的信息 `bower info jquery`
+ + 会看到jquery可用的版本信息
+- 安装指定版本`bower i jquery#1.9.0
  
  
