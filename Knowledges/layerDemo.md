@@ -1,6 +1,6 @@
-layer使用方法官方api详见http://www.layui.com/doc/modules/layer.html
-官方小demo参考详见：http://layer.layui.com/
-小demo如下：
+## layer使用方法官方api详见http://www.layui.com/doc/modules/layer.html
+## 官方小demo参考详见：http://layer.layui.com/
+## 练习小demo如下：
 
 ```
 <!DOCTYPE html>
