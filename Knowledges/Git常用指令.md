@@ -55,6 +55,7 @@ git log -p <file> # 查看每次详细修改内容的diff
 git log -p -2 # 查看最近两次详细修改内容的diff
 
 git log --stat #查看提交统计信息
+git reflog   显示当前分支的最近几次提交
 
 tig
 
