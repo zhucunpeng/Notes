@@ -1,4 +1,4 @@
-# 学习之中的一些小知识
+## 学习之中的一些小知识
 - <a href="https://github.com/ziwutong/Notes/tree/master/HTML">HTML小知识</a>
 
 - <a href="https://github.com/ziwutong/Notes/tree/master/CSS">CSS小知识</a>
@@ -15,4 +15,4 @@
 
 - <a href="https://github.com/ziwutong/Notes/tree/master/Node">Node小知识</a>
 
-- <a href="https://github.com/ziwutong/Notes/tree/master/Knowledges">小常识的总结</a>
+- <a href="https://github.com/ziwutong/Notes/tree/master/Knowledges">乱七八糟小常识的总结</a>
