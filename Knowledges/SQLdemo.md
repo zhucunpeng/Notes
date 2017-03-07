@@ -290,48 +290,12 @@ where 学号 in
 25.
 select 学号,姓名
 from 学生表
-where 学号 in
-			(
-			select 学号
-			from 选课表
-			where 成绩 < 
-						(
-						select avg(成绩)
-						from 选课表
-						where 课程号=
-									(select 课程号
-									from 课程表
-									where 课程名='数据库'
-									)
-						)
-		    and 课程号	= 
-						(select 课程号
-						from 课程表
-						where 课程名='数据库'
-						)
-			);
+where 学号 in(select 学号 from 选课表 where 成绩 < (select avg(成绩) from 选课表 where 课程号=(select 课程号 from 课程表 where 课程名='数据库')) and 课程号 = (select 课程号 from 课程表 where 课程名='数据库'));
 
 26.
 select 学号,姓名
 from 学生表 s1
-where not exists
-			(select *
-			from  选课表 sc1
-			where 课程号 not in (
-								select 课程号
-								from 选课表 sc2
-								where 学号=
-										  (
-										  select 学号
-										  from 学生表 s2
-										  where s2.姓名='貂蝉'
-										  )
-								)
-			and s1.学号=sc1.学号
-
-			)
-and 姓名!='貂蝉'
-and (
+where not exists (select * from  选课表 sc1 where 课程号 not in (select 课程号 from 选课表 sc2 where 学号= ( select 学号 from 学生表 s2  where s2.姓名='貂蝉' )) and s1.学号=sc1.学号 ) and 姓名!='貂蝉' and (
 	select count(*)
 	from 选课表
 	where 选课表.学号=s1.学号)=
@@ -343,21 +307,7 @@ and (
 27.
 select 学号,姓名
 from 学生表 s1
-where not exists  (
-				  select * 
-				  from 选课表 sc2
-				  where sc2.学号=(select 学号 from 学生表 where 姓名='貂蝉') 
-						and	
-						(sc2.课程号 not in
-										(select 课程号
-										from 选课表 sc3
-										where sc3.学号=s1.学号
-										)
-						)  
-				  )
-	and (
-	(select count(*) from 选课表 where 选课表.学号=s1.学号) 
-	> (select count(*) from 选课表 where 学号=(select 学号 from 学生表 where 姓名='貂蝉'))
-	);
+where not exists  (select * from 选课表 sc2 where sc2.学号=(select 学号 from 学生表 where 姓名='貂蝉') and (sc2.课程号 not in (select 课程号
+from 选课表 sc3 where sc3.学号=s1.学号)))and ((select count(*) from 选课表 where 选课表.学号=s1.学号) > (select count(*) from 选课表 where 学号=(select 学号 from 学生表 where 姓名='貂蝉')));
 28.
 
