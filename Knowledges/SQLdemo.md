@@ -55,13 +55,8 @@ into Student
 values ('0002','美女',(select 成绩 from 选课表 where 学号='0101' and 课程号='c01'));
 这样的形式。
 
-
-insert 
-into Student
-select 学号,姓名,90 from 学生表;
-
-90；表示新插入的这一列值均为90
-
+insert into Student select 学号,姓名,90 from 学生表;
+90 表示新插入的这一列值均为90
 
 4.
 delete
@@ -152,11 +147,7 @@ group by 学号)temp(学号,总成绩,平均成绩)
 where 学生表.学号=temp.学号;
 
 11.
-update 学生表
-set 年龄= (select avg(年龄)
-		   from 学生表
-		   where 系号=8)
-where 系号=6;
+update 学生表 set 年龄= (select avg(年龄) from 学生表 where 系号=8) where 系号=6;
 
 12.
 update 选课表
@@ -189,34 +180,12 @@ select 课程名 from 课程表 where 课程名 like 'P%L__';
 21.
 select sum(成绩)
 from 选课表
-where 学号 = 
-			(
-			select 学号
-			from 学生表
-			where 姓名='甘宁'
-			);
+where 学号 = (select 学号 from 学生表 where 姓名='甘宁');
 
 22.
 select *
 from 学生表
-where 学号 in
-			(
-			select t1.学号
-			from 选课表 t1,选课表 t2
-			where t1.课程号 = 
-							(
-							select 课程号
-							from 课程表
-							where 课程名='数据库'
-							) 
-				 and t2.课程号 =
-							   (
-							   select 课程号
-							   from 课程表
-							   where 课程名='操作系统'
-							   )
-			     and t1.学号 = t2.学号
-			);
+where 学号 in(select t1.学号 from 选课表 t1,选课表 t2 where t1.课程号 = (select 课程号 from 课程表 where 课程名='数据库') and t2.课程号 = ( select 课程号 from 课程表 where 课程名='操作系统' )and t1.学号 = t2.学号);
 
 23. select 学号,姓名
 from 学生表
