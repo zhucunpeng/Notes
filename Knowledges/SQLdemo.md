@@ -171,54 +171,20 @@ select 姓名,入学年份,籍贯 from 学生表;
 select * from 学生表 where 籍贯='山东';
 
 15.
-select 学号,姓名 from 学生表 
-where 年龄=
-		   (select min(年龄)
-		    from 学生表); 
+select 学号,姓名 from 学生表 where 年龄=(select min(年龄)from 学生表); 
 
 16.
-select 学号 from 选课表
-where 课程号= 
-			 (select 课程号
-			  from 课程表
-			  where 课程名='数据库'
-			 );
+select 学号 from 选课表 where 课程号=  (select 课程号 from 课程表 where 课程名='数据库');
 17.
-select 学号,姓名
-from 学生表
-where 学号 in
-		(
-		select 学号 from 选课表
-		where 课程号= 
-					(select 课程号
-					 from 课程表
-					 where 课程名='编译技术'
-					 )
-		)
-and 性别='女';
+select 学号,姓名 from 学生表 where 学号 in (select 学号 from 选课表 where 课程号= (select 课程号 from 课程表 where 课程名='编译技术' )) and 性别='女';
 
 18.
-select 课程号
-from 选课表
-where 学号=
-		  (select 学号
-		  from 学生表
-		  where 学号=
-					(
-					select 班长学号
-					from 学生表
-					where 姓名='典韦'
-					)
-		  )
+select 课程号 from 选课表 where 学号= (select 学号 from 学生表  where 学号=(select 班长学号 from 学生表 where 姓名='典韦'))
 19.
-select 学号,姓名,系名
-from 学生表,系表
-where 姓名 like '%侯_' and 系表.系号=学生表.系号;
+select 学号,姓名,系名 from 学生表,系表 where 姓名 like '%侯_' and 系表.系号=学生表.系号;
 
 20.
-select 课程名
-from 课程表
-where 课程名 like 'P%L__';
+select 课程名 from 课程表 where 课程名 like 'P%L__';
 
 21.
 select sum(成绩)
