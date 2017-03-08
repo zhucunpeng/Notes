@@ -189,39 +189,11 @@ where 学号 in(select t1.学号 from 选课表 t1,选课表 t2 where t1.课程�
 
 23. select 学号,姓名
 from 学生表
-where 学号 not in
-			(
-			select 学号
-			from 选课表
-			where 课程号 = 
-							(
-							select 课程号
-							from 课程表
-							where 课程名='数据库'
-							) 
-			);
+where 学号 not in(select 学号 from 选课表 where 课程号 = (select 课程号 from 课程表 where 课程名='数据库') );
 24.
 select 学号,姓名
 from 学生表
-where 学号 in
-			(
-			select t1.学号
-			from 选课表 t1,选课表 t2
-			where t1.课程号 = 
-							(
-							select 课程号
-							from 课程表
-							where 课程名='数据库'
-							) 
-				 and t2.课程号 =
-							   (
-							   select 课程号
-							   from 课程表
-							   where 课程名='操作系统'
-							   )
-			     and t1.学号 = t2.学号
-				 and t1.成绩 >=60 and t2.成绩 < 60
-			);
+where 学号 in(select t1.学号 from 选课表 t1,选课表 t2 where t1.课程号 = (select 课程号 from 课程表 where 课程名='数据库')  and t2.课程号 =( select 课程号 from 课程表 where 课程名='操作系统') and t1.学号 = t2.学号 and t1.成绩 >=60 and t2.成绩 < 60);
 25.
 select 学号,姓名
 from 学生表
