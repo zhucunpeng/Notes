@@ -1,4 +1,5 @@
 ## github 快速访问的设置方法
+
 1. 首先打开http://tool.chinaz.com/dns 查询域名解析
 2. 在请输入域名中输入github.com  点击检测
 3. 选择TTL值最低的IP和域名复制  比如：192.30.253.113   github.com
