@@ -224,7 +224,7 @@ break 直接使用当前location的资源来访问，不再执行location里余�
 nginx日志管理(缓存）
 日志分割脚本(防止日志文件变得很庞大)，每天分割一次
 vim /data/logs.sh
-#! /bin/bash
+\#! /bin/bash
 ### Nginx日志存放位置
 logs_path="/data/logs/"
 ### 将日志改名
