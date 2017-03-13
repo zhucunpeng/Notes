@@ -192,7 +192,7 @@ proxy_pass http://my_server_pool；
 ｝
 
 
-nginx uri匹配规则(location)
+### nginx uri匹配规则(location)
 
 语法：location [=|~|~*|^~]  /uri/  {...}
 
@@ -225,7 +225,7 @@ nginx日志管理(缓存）
 日志分割脚本(防止日志文件变得很庞大)，每天分割一次
 vim /data/logs.sh
 #! /bin/bash
-#Nginx日志存放位置
+### Nginx日志存放位置
 logs_path="/data/logs/"
 ### 将日志改名
 mkdir -p ${logs_path}${date -d "yesterday" +"%Y"}/${date -d "yesterday" +"%m"}/
