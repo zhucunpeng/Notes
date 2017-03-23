@@ -105,3 +105,52 @@ function get()
     alert(str);
 }
 ```
+
+2. 正则表达式效果不错
+
+```
+<script type="text/javascript">
+onload = function(){
+    var a = "23.456322";
+    var aNew;
+    var re = /([0-9]+.[0-9]{2})[0-9]*/;
+    aNew = a.replace(re,"$1");
+    alert(aNew);
+}
+</script>
+```
+
+3. 这个就比较聪明了.....
+
+```
+<script>
+var num=22.127456;
+alert( Math.round(num*100)/100);
+</script>
+```
+
+4. js保留2位小数（强制）
+  - 对于小数点位数大于2位的，用上面的函数没问题，但是如果小于2位的，比如：changeTwoDecimal(3.1)，将返回3.1，如果你一定需要3.10这样的格式，那么需要下面的这个函数：
+  
+  ```
+  function changeTwoDecimal_f(x) {
+    var f_x = parseFloat(x);
+    if (isNaN(f_x)) {
+        alert('function:changeTwoDecimal->parameter error');
+        return false;
+    }
+    var f_x = Math.round(x * 100) / 100;
+    var s_x = f_x.toString();
+    var pos_decimal = s_x.indexOf('.');
+    if (pos_decimal < 0) {
+        pos_decimal = s_x.length;
+        s_x += '.';
+    }
+    while (s_x.length <= pos_decimal + 2) {
+        s_x += '0';
+    }
+    return s_x;
+}
+  ```
+  
+  - 功能：将浮点数四舍五入，取小数点后2位，如果不足2位则补0,这个函数返回的是字符串的格式用法：changeTwoDecimal(3.1415926)返回3.14 changeTwoDecimal(3.1)返回3.10
