@@ -1,6 +1,9 @@
 ## JavaScript实现页面截图的类库 [html2canvas](https://github.com/niklasvh/html2canvas)
 
 - 使用html2canvas实现浏览器截图,可以参考博客资料[http://www.cnblogs.com/yanweidie/p/5203943.html](http://www.cnblogs.com/yanweidie/p/5203943.html)
+
+- 简书相关资料[http://www.jianshu.com/p/6a07e974a7e8](http://www.jianshu.com/p/6a07e974a7e8)
+
 - 官方资料gitHub:[https://github.com/niklasvh/html2canvas](https://github.com/niklasvh/html2canvas)
 - 在线检测浏览器兼容性:[http://deerface.sinaapp.com/](http://deerface.sinaapp.com/)
 
