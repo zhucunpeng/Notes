@@ -7,6 +7,23 @@
 - 官方资料gitHub:[https://github.com/niklasvh/html2canvas](https://github.com/niklasvh/html2canvas)
 - 在线检测浏览器兼容性:[http://deerface.sinaapp.com/](http://deerface.sinaapp.com/)
 
+## 相关参数配置-可用参数
+
+可用参数
+
+|  参数名称 | 类型 | 默认值 |	描述 |
+| --- | --- | --- | --- |
+allowTaint | 	boolean	 | false | 	Whether to allow cross-origin images to taint the canvas---允许跨域
+background | 	string	 | #fff | 	Canvas background color, if none is specified in DOM. Set undefined for transparent---canvas的背景颜色，如果没有设定默认透明
+height	 | number | 	null	 | Define the heigt of the canvas in pixels. If null, renders with full height of the window.---canvas高度设定
+letterRendering | 	boolean | 	false	 | Whether to render each letter seperately. Necessary if letter-spacing is used.---在设置了字间距的时候有用
+logging	 | boolean	 | false	 | Whether to log events in the console.---在console.log()中输出信息
+proxy | 	string	 | undefined	 |  | Url to the proxy which is to be used for loading cross-origin images. If left empty, cross-origin images won't be loaded.---代理地址
+taintTest	 | boolean	 | true | 	Whether to test each image if it taints the canvas before drawing them---是否在渲染前测试图片
+timeout	 | number | 	0	 | Timeout for loading images, in milliseconds. Setting it to 0 will result in no timeout.---图片加载延迟，默认延迟为0，单位毫秒
+width	 | number	 | null	 | Define the width of the canvas in pixels. If null, renders with full width of the window.---canvas宽度
+useCORS	 | boolean	 | false	 | Whether to attempt to load cross-origin images as CORS served, before reverting back to proxy--这个我也不知道是干嘛的
+
 ## 使用方法如下:
 1. 引入文件 
 
