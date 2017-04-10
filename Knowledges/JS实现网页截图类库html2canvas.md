@@ -2,6 +2,8 @@
 
 - 使用html2canvas实现浏览器截图,可以参考博客资料[http://www.cnblogs.com/yanweidie/p/5203943.html](http://www.cnblogs.com/yanweidie/p/5203943.html)
 - 官方资料gitHub:[https://github.com/niklasvh/html2canvas](https://github.com/niklasvh/html2canvas)
+- 在线检测浏览器兼容性:[http://deerface.sinaapp.com/](http://deerface.sinaapp.com/)
+
 -  主要是让用户调用时能够自定义需要截取Dom对象的宽和高，现在调用方式如下
 
 ```
