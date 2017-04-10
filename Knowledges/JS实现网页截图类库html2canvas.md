@@ -4,8 +4,20 @@
 - 官方资料gitHub:[https://github.com/niklasvh/html2canvas](https://github.com/niklasvh/html2canvas)
 - 在线检测浏览器兼容性:[http://deerface.sinaapp.com/](http://deerface.sinaapp.com/)
 
--  主要是让用户调用时能够自定义需要截取Dom对象的宽和高，现在调用方式如下
+## 使用方法如下:
+1. 引入文件 
 
+  首先我们需要引入jQUERY库和html2canvas插件文件，注意html2canvas插件文件一定要在jQuery的后面引入，不然会报错
+
+```
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://html2canvas.hertzen.com/build/html2canvas.js"></script>
+ ```
+
+2. 调用插件
+
+  通过html2canvas方法调用插件，该方法接受两个参数，第一个为要生成截图的DOM元素，第二个参数为插件的配置，可以让用户调用时能够自定义需要截取Dom对象的宽和高
+  
 ```
 $("#btn_screen").on("click", function () {               
                 html2canvas($("#tbl_exception"), {
@@ -19,6 +31,7 @@ $("#btn_screen").on("click", function () {
                     }
                 });
             });
+           
 ```
 
 
